@@ -12,7 +12,7 @@ type T struct {
 
 func (t *T) M() {
 	if t == nil {
-		fmt.Println("<nil>６３")
+		fmt.Println("<nil>63")
 		return
 	}
 	fmt.Println(t.S)
