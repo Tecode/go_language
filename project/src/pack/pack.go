@@ -2,6 +2,9 @@ package pack10
 
 import "fmt"
 
+func init()  {
+	fmt.Println("初始化pack10包...")
+}
 
 func ReturnStr() {
 	for index:=0; index < 10; index++ {
