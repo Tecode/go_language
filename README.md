@@ -1,2 +1,14 @@
 # goLang
-下一个开发项目就将PHP换成GoLang
+
+
+## Run
+
+```go
+go run youfile.go
+```
+
+## Build
+
+```go
+go build youfile.go
+```
