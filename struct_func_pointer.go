@@ -8,7 +8,7 @@ type Student struct {
 	class int
 }
 
-// 作为指针可以修改结构体的数据
+// 作为指针可以修改结构体的数据（引用传递）
 func change(student *Student) {
 	student.name = "666"
 }
