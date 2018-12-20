@@ -4,7 +4,7 @@ import "fmt"
 
 func main() {
 	var list01[2] string
-	var array = []int{1, 5, 6}
+	var array = []int{1, 5, 6, 9}
 
 	list01[0] = "hello"
 	list01[1] = "world"
