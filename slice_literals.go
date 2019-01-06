@@ -3,6 +3,8 @@ package main
 import "fmt"
 
 func main() {
+	arr := []string{"5"}
+	fmt.Println(arr)
 	q := []int{2, 3, 5, 7, 11, 13}
 	fmt.Println(q)
 
