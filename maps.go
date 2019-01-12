@@ -1,6 +1,8 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+)
 
 type Vertex struct {
 	x, y, z float32
@@ -8,9 +10,8 @@ type Vertex struct {
 
 type item struct {
 	name string
-	id int
+	id   int
 }
-
 
 func main() {
 	var m = make(map[string]Vertex)
@@ -19,6 +20,19 @@ func main() {
 	fmt.Printf("%v", m)
 
 	var json = make(map[string]item)
-	json["bob"] = item{name:"Ele", id:56}
+	json["bob"] = item{name: "Ele", id: 56}
 	fmt.Println(json)
+
+	data := map[string]string{"name": "Aming", "idCart": "5110102244"}
+	/*
+		map中的值是否存在
+		ok = true存在
+	*/
+	value, ok := data["name"]
+	fmt.Println(value, ok)
+
+	// map循环
+	for key, val := range data {
+		fmt.Println(key, val)
+	}
 }
