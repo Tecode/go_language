@@ -5,6 +5,7 @@ import (
 	"pack"
 )
 
+// 初始化函数，会在main函数之前执行
 func init()  {
 	fmt.Println("初始化main包...")
 }
@@ -13,7 +14,9 @@ func main() {
 	pack10.ReturnStr()
 	// 有报错，可能是环境变量问题
 	//output()
+	//sum(4, 5)
 }
+
 
 // 输出
 /*

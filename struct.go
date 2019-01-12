@@ -4,7 +4,7 @@ import "fmt"
 
 type Animal struct {
 	name string
-	age int
+	age  int
 }
 
 func main() {
