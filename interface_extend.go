@@ -2,10 +2,12 @@ package main
 
 import "fmt"
 
+// 子集
 type Human interface {
 	song()
 }
 
+// 超集
 type Person interface {
 	Human
 	say(lrc string)
