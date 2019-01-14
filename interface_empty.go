@@ -9,5 +9,7 @@ func main() {
 	fmt.Println(i)
 
 	i = "544"
-	fmt.Println(i)
+	fmt.Println(i.(string))
+
+
 }
