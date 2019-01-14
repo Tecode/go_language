@@ -24,5 +24,8 @@ func (student *Student) printInfo()  {
 
 func main() {
 	student := Student{Person{"Ming", "10021451", 15},"成都"}
+	// 就近原则，如果Student有这个方法就使用Student里面的方法,没有就找父级的方法
 	student.printInfo()
+	// 显示调用Person的方法
+	student.Person.printInfo()
 }
