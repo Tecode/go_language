@@ -13,6 +13,7 @@ func main() {
 	i[2] = Student{"Ming"}
 
 	for _, data := range i {
+		// value,返回的是说明类型int,string
 		switch value := data.(type) {
 		case int:
 			fmt.Println("int", value)
