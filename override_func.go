@@ -28,4 +28,7 @@ func main() {
 	student.printInfo()
 	// 显示调用Person的方法
 	student.Person.printInfo()
+	// 方法值
+	sfunc := student.printInfo
+	sfunc()
 }
