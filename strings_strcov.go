@@ -27,5 +27,5 @@ func main() {
 		fmt.Println(boolean)
 	}
 
-	
+
 }
