@@ -5,6 +5,7 @@ import "fmt"
 type Json struct {
 	id int
 	name string
+	age int
 }
 
 func main() {
@@ -18,7 +19,7 @@ func main() {
 	list2 = append(list2, 69, 36)
 	fmt.Println(list2)
 
-	var json Json  = Json{4, "Mac"}
+	var json Json  = Json{4, "Mac", 4}
 	fmt.Println(json, json.id)
 
 
