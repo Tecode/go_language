@@ -15,13 +15,13 @@ func writeFile(path string) {
 	defer file.Close()
 
 	var buf string
-	for i := 0; i < 10; i++ {
+	for i := 0; i < 9; i++ {
 		buf = fmt.Sprintf("%d * %d = %d \n ", i, i, i*i)
-		index, err := file.WriteString(buf)
+		_, err := file.WriteString(buf)
 		if err != nil {
 			fmt.Println(err)
 		}
-		fmt.Println(index)
+		//fmt.Println(index)
 	}
 
 }
