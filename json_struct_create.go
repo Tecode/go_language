@@ -7,8 +7,8 @@ import (
 
 type It struct {
 	Name    string `json:"name"` // json:"name"设置别名
-	Subject []string `json:"subject"`
-	IsOk    bool `json:"isOk"`
+	Subject []string `json:"-"` //二次编码 - 隐藏改字段
+	IsOk    bool `json:",string"` // 转换成字符串
 }
 
 func main() {
