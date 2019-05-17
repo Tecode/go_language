@@ -11,6 +11,6 @@ func add(args ...int) int {
 }
 
 func main() {
-	fmt.Println(add(5))
+	fmt.Println(add(5, 4))
 	fmt.Println(add([]int{5, 80, 9, 8, 5, 8, 9}...))
 }
