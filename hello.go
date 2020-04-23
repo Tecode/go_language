@@ -1,7 +1,11 @@
 package main
 
-import "github.com/astaxie/beego"
+import "fmt"
 
 func main() {
-	beego.Run()
+	var list = []int{5}
+	var a int;
+	for index:=1; index < 5; index ++  {
+		fmt.Print(list,a)
+	}
 }

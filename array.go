@@ -10,9 +10,9 @@ func main() {
 
 	list01[0] = "hello"
 	list01[1] = "world"
-	for _,value := range list01[0] {
+	for _,value := range list01 {
 		//fmt.Println(index, value)
-		fmt.Printf("%c \n", value)
+		fmt.Printf("%s \n", value)
 	}
 
 	list02 := []int{4, 2, 6, 8, 7}

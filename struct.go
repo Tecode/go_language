@@ -9,7 +9,9 @@ type Animal struct {
 
 func main() {
 	animal := Animal{"cat", 2}
+	animal2 := Animal{}
 	p := &animal
 	p.age = 1.0e5
 	fmt.Println(animal)
+	fmt.Println(animal2)
 }

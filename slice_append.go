@@ -3,9 +3,11 @@ package main
 import "fmt"
 
 func main() {
-	slice := []int{}
+	var slice []int
 	fmt.Println(len(slice))
 	fmt.Println(cap(slice))
+	array := make([]float32,4)
+	fmt.Println(array)
 
 	// 在原切片末尾添加元素，自动扩容
 	slice = append(slice, 6)
