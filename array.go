@@ -3,14 +3,16 @@ package main
 import "fmt"
 
 func main() {
-	var list01[2] string
+	var list01 [2]string
 	var array = []int{1, 5, 6, 9}
-	var user = []string{"45", "457"};
+	var user = []string{"45", "457"}
+	var listValue [100]int
 	fmt.Println(user)
+	fmt.Println(listValue, "____>>")
 
 	list01[0] = "hello"
 	list01[1] = "world"
-	for _,value := range list01 {
+	for _, value := range list01 {
 		//fmt.Println(index, value)
 		fmt.Printf("%s \n", value)
 	}
