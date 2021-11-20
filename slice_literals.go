@@ -25,7 +25,7 @@ func main() {
 	fmt.Println(s)
 
 	var json = []struct {
-		key string
+		key   string
 		value int
 	}{
 		{"name", 12},

@@ -9,7 +9,7 @@ import (
 //文件的读写
 func main() {
 	list := os.Args
-	if len(list) !=3 {
+	if len(list) != 3 {
 		fmt.Println("参数错误：xxx.go srcFile dstFile")
 		return
 	}
