@@ -13,6 +13,6 @@ func main() {
 	reg := regexp.MustCompile(`a[\d | [:alpha:]]+c`)
 	buf := "abc ace acc a5c a2c movie"
 	// 根据规则信息提取关键信息，返回一个切片
-	fmt.Println(reg.FindAllString(buf,-1))
+	fmt.Println(reg.FindAllString(buf, -1))
 
 }

@@ -33,7 +33,6 @@ Reviewed-by: Paul Wankadia &lt;junyer@google.com&gt;</pre></div>
 	match := reg.FindAllString(buf, -1)
 	fmt.Println(match)
 
-
 	for _, value := range match {
 		fmt.Println(value)
 	}

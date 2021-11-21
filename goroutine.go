@@ -5,7 +5,7 @@ import (
 	"time"
 )
 
-func add(a, b int, c chan int) {
+func add002(a, b int, c chan int) {
 	num := a + b
 	c <- num
 }
@@ -15,7 +15,7 @@ func main() {
 	c := make(chan int)
 	for _, value := range list {
 		fmt.Println(value)
-		go add(value, value, c)
+		go add002(value, value, c)
 	}
 
 	a := <-c
