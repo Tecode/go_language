@@ -15,9 +15,9 @@ func main() {
 	// 定义一个结构体变量
 	it := It{Name: "Go", Subject: []string{"C++", "Python", "Go", "Java", ""}, IsOk: true}
 	//	编码，更加内容生成json文本
-	//buf, err := json.Marshal(it)
+	buf, err := json.Marshal(it)
 	// MarshalIndent格式化，让代码能够有缩进
-	buf, err := json.MarshalIndent(it, "", " ")
+	//buf, err := json.MarshalIndent(it, "", " ")
 	if err != nil {
 		fmt.Println(err)
 		return
